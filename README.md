@@ -19,6 +19,4 @@ It will support most used currencies.
 Our idea is to make currency converter to help people convert their money in another currency, with exchange rate (published by the *[European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)*) valid at the moment of their willingness to change. 
 
 ## Trello board.
-```
-*[Trello Board](https://trello.com/b/moA5BFUQ/conversion-spa)*
-```
+**[Trello Board](https://trello.com/b/moA5BFUQ/conversion-spa)**
