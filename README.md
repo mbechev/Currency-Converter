@@ -7,9 +7,7 @@ Immanyama Solutions.
 Our team leader is Iva Zhelyazkova.
 
 ## Who are your team members?
-Iva Zhelyazkova
-Nikolai Vasilev
-Martin Bechev
+Iva Zhelyazkova, Nikolai Vasilev, Martin Bechev
 
 ## What is your project going to be about?
 It will be single-page currency converter application, which gets information about exchange rate in real-time from *[API](https://exchangeratesapi.io/)*. 
