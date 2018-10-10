@@ -3,7 +3,7 @@
 
 <head>
     <title>Currency Converter</title>
-    <link rel="icon" href="./images/curency.png" type="image/gif" sizes="20x20">
+    <link rel="icon" href="./images/currency-fav-ivon.png" type="image/gif" sizes="20x20">
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -24,7 +24,7 @@
             <div class='input-container'>
                 <div class='input-blocks'>
                     <p>Amount</p>
-                    <input type="number" name="amount">
+                    <input id="amount" type="number" name="amount" min="1">
                 </div>
 
                 <div class='input-blocks'>
@@ -50,11 +50,10 @@
                     <button id='swap-btn'>Swap</button>
                 </div>
                 
-
                 <div class='result-container'>
-                    <div>
-                        <p class='result'>Result:</p>
-                        <input class='result' type="text">
+                    <div id = "result">
+                        <p>Result:</p>
+                        
                     </div>
                     <div class='date-container'>
                         <div>
