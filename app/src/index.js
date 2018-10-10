@@ -22,23 +22,11 @@ $("#convert-btn").click(function () {
     })
 })
 
-function changeValue(id, newText) {
-    var el = document.getElementById(id);
-    el.value = newText;
-    return false;
-}
-
 $("#swap-btn").click(function () {
+    let from = ($("#from-input").val());
+    let to = ($("#to-input").val()); 
     let newFrom = to;
     let newTo = from;
-    console.log(newFrom, newTo);
-
-    let url = `https://free.currencyconverterapi.com/api/v6/convert?q=${newFrom}_${newTo}`;
-
-       changeValue("from-input", newFrom);
-       changeValue("to-input", newTo);
-
-    $.get(url, function (data) {
-        console.log(data)
-    })
-})
+    $("#from-input").val(newFrom);
+    $("#to-input").val(newTo);
+});
