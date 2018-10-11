@@ -39,9 +39,17 @@ $("#convert-btn").click(function () {
     let aSync = async function () {
         let exchangeRate = await getExchangeRate();
         let result = await convertionResult(exchangeRate);
+        
+        //currency symbol if any
+        let currentSymbol = listCurrencies[to].currencySymbol || to; 
 
-        // let tag = $("<p></p>").text(result).css("color", "white");
-        // $("#result").append(tag);
+        /* tag append is not working here. Fixed as result paragraph text change, 
+        but we should find a better solution */
+
+        /* let tag = $("<p></p>").text(`${result} ! ! ! ${currentSymbol} !`).css("color", "white");
+        $("#result").append(tag); */
+
+        $("#res-par").text(`${result} ${currentSymbol}`).css("color", "green");
     }
     aSync();
 });
