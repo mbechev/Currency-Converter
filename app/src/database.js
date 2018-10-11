@@ -728,11 +728,8 @@ const listCurrencies = {
     id: 'BYN',
   },
 };
-const currenciesArray = [];
-
-for (const key in listCurrencies) {
-  currenciesArray.push(key);
-};
+const currenciesArray = Object.values(listCurrencies)
+    .map((element) => element.id);
 
 
 export {
