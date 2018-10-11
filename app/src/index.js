@@ -40,8 +40,8 @@ $("#convert-btn").click(function () {
         let exchangeRate = await getExchangeRate();
         let result = await convertionResult(exchangeRate);
 
-        let tag = $("<p></p>").text(result).css("color", "white");
-        $("#result").append(tag);
+        // let tag = $("<p></p>").text(result).css("color", "white");
+        // $("#result").append(tag);
     }
     aSync();
 });
