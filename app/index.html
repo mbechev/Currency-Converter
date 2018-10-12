@@ -30,7 +30,7 @@
             <div class='form-group'>
                 <div class='input-blocks'>
                     <p>Amount</p>
-                    <input id='amount' class='form-control' type='number' name='amount' min='1'>
+                    <input id='amount' class='form-control' type='number' name='amount' min='1' oninput='validity.valid||(value="");' >  
                 </div>
                 <div class='input-blocks'>
                     <p>From</p>
