@@ -39,7 +39,7 @@ const convertEvent = () => {
     // .text(`${result} ! ! ! ${currentSymbol} !`)
     // .css('color', 'white');
     // $('#result').append(tag)
-    $('#res-par').text(`${result} ${currentSymbol}`).css('color', 'green');
+    $('#res-par').text(`${result} ${currentSymbol}`).css('color', 'white');
   };
   aSync();
 };

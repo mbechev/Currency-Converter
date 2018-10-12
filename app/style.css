@@ -1,63 +1,41 @@
 .body {
     background-color: rgb(27, 25, 25);
-    margin-left: 200px;
-    margin-right: 200px;
-    flex-shrink: 3;
 }
 
-.wrapper {
-    background-color: rgb(90, 90, 90);
-    height: 700px;
-    padding-top: 1px;
-}
-
-.main-body {
-    /* font-family: "Amaranth"; */
-    text-align: center;
-    background-color: rgb(122, 122, 122);
-    margin: 20px;
-    border-radius: 5%;
-    height: 400px;
-}
-
-.main-body h3 {
-    font-size: 30px;
+.input-container{
     color: black;
 }
 
-.main-body p {
-    font-size: 20px;
+.jumbotron{
+    background-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
+.page-header h1{
+    color: rgba(255, 217, 65, 0.898);
+    margin-bottom: 0px;
+}
+.page-header h2{
+    color: white;
+    margin-top: 3px;
+}
+
+.form-group p{
+    margin-bottom: 3px;
+    font-size: 17px;
+}
+
+.btn-toolbar{
+    margin-top: 20px;
+}
 
 .input-blocks {
     display: inline-block;
 }
 
-.input-blocks p {
-    font-size: 20px;
-    text-align: justify
-}
-
-.input-container {
-    font-size: 25px;
-    padding-top: 30px;
-}
-
-#team-name {
-    border-bottom: 2px solid grey;
+#swap-btn {
     color: black;
-    padding-bottom: 15px;
-    font-family: "Advent Pro";
-    font-size: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#convert-btn {
-    background-color: rgb(47, 180, 43);
-    color: white;
-    border-radius: 40%;
 }
 
 
@@ -68,6 +46,7 @@
     /*the container must be positioned relative:*/
     position: relative;
     display: inline-block;
+    color: black;
 }
 
 .autocomplete-items {

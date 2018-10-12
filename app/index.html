@@ -1,71 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Currency Converter</title>
-    <link rel="icon" href="./images/currency-fav-icon.png" type="image/gif" sizes="20x20">
+    <link rel='icon' href='./images/currency-fav-icon.png' type='image/gif' sizes='20x20'>
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Amaranth" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
-
+    <link rel='stylesheet' href='style.css'>
 </head>
 
-<body class="body">
-    <div class="wrapper">
-
-        <h1 id="team-name">Immanyama Solutions</h1>
-        <div class="main-body">
-            <h3>Currency Converter</h3>
-            <p>Check out you currency in another with real time exchange rate.</p>
-
-            <div class='input-container'>
+<body class='body'>
+    <div class='container'>
+        <div class='page-header'>
+            <h1>Immanyama</h1>
+            <h2>solutions</h2>
+        </div>
+        <div class='jumbotron'>
+            <div class='main-body'>
+                <h3>Currency Converter</h3>
+                <p>Check out you currency in another with real time exchange rate.</p>
+            </div>
+            <div class='form-group'>
                 <div class='input-blocks'>
                     <p>Amount</p>
-                    <input id="amount" type="number" name="amount" min="1">
+                    <input id='amount' class='form-control' type='number' name='amount' min='1'>
                 </div>
-
                 <div class='input-blocks'>
                     <p>From</p>
-                    <form autocomplete="off" action="/action_page.php">
-                        <div class="autocomplete">
-                            <input id="from-input" type="text" name="from-currency" placeholder="USD">
+                    <form autocomplete='off' action='/action_page.php'>
+                        <div class='autocomplete'>
+                            <input id='from-input' class='form-control' type='text' name='from-currency' placeholder='USD'>
                         </div>
                     </form>
-
                 </div>
-
                 <div class='input-blocks'>
                     <p>To</p>
-                    <form autocomplete="off" action="/action_page.php">
-                        <div class="autocomplete">
-                            <input id="to-input" type="text" name="to-currency" placeholder="EUR">
+                    <form autocomplete='off' action='/action_page.php'>
+                        <div class='autocomplete'>
+                            <input id='to-input' class='form-control' type='text' name='to-currency' placeholder='EUR'>
                         </div>
                     </form>
                 </div>
-                <div class="input-blocks">
-                    <button id='convert-btn'>Convert</button>
-                    <button id='swap-btn'>Swap</button>
-                </div>
-                
-                <div class='result-container'>
-                    <div id = "result">
-                        <p id = "res-par">Result:</p>
-                        
-                    </div>
-                    <div class='date-container'>
-                        <div>
-                            <p class='date'>Last update: </p>
-                            <input class='date' type='text'>
+                <div class='row'>
+                    <div class='col-md-5'></div>
+                    <div class='col-md-3'>
+                        <div class='btn-toolbar' role='toolbar' aria-label='Toolbar with button groups'>
+                            <div class='btn-group mr-2' role='group' aria-label='First group'>
+                                <button type='submit' class='btn btn-warning btn-lg' id='convert-btn'>Convert</button>
+                            </div>
+                            <div class='btn-group mr-2' role='group' aria-label='Second group'>
+                                <button type='submit' class='btn btn-ino btn-lg' id='swap-btn'>Swap</button>
+                            </div>
                         </div>
                     </div>
+                    <div class='col-md-4'></div>
                 </div>
+                <div class='result-container'>
+                    <div id='result'>
+                        <p id='res-par'>Result:</p>
+                    </div>
+                </div>
+                <div class='date-container '>
+                    <div>
+                        <p class='date '>Last update: </p>
+                    </div>
+                </div>
+               
             </div>
-        </div>
-    </div>
-    <script src="./dist/main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src='./dist/main.js'></script>
 </body>
 
 </html>
