@@ -37,3 +37,12 @@
 #swap-btn {
     color: black;
 }
+
+#res-par{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#todayDate{
+    font-size: 15px;
+}
