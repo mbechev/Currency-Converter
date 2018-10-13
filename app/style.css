@@ -1,32 +1,43 @@
 .body {
-    background-color: rgb(27, 25, 25);
+    background-image: url("./images/background-wallpaper.jpg");
+    background-repeat: x ;
+    background-position: center;
 }
 
-.input-container{
+.input-container {
     color: black;
 }
 
-.jumbotron{
-    background-color: rgb(80, 80, 80);
+.jumbotron {
+    background-color: inherit;
     color: rgb(255, 255, 255);
     text-align: center;
 }
 
-.page-header h1{
-    color: rgba(255, 217, 65, 0.898);
-    margin-bottom: 0px;
+.page-header {
+    display: flex;
 }
-.page-header h2{
+
+.page-header h1 {
+    color: rgba(255, 217, 65, 0.898);
+    margin-top: 10px;
+}
+
+.page-header h2 {
     color: white;
     margin-top: 3px;
+
 }
 
-.form-group p{
+.form-group p {
     margin-bottom: 3px;
     font-size: 17px;
+    color: white;
+    background-color: inherit;
+    background-clip: padding-box;
 }
 
-.btn-toolbar{
+.btn-toolbar {
     margin-top: 20px;
 }
 
@@ -38,11 +49,36 @@
     color: black;
 }
 
-#res-par{
+#res-par {
     font-size: 30px;
     margin-top: 20px;
 }
 
-#todayDate{
+#todayDate {
     font-size: 15px;
+}
+
+#loading {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    margin-top: 11px;
+    margin-bottom: 9px;
+    -webkit-animation: rotation 5s infinite linear;
+}
+
+
+
+@-webkit-keyframes rotation {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+
+    20%,
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+
 }
