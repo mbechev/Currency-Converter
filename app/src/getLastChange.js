@@ -1,5 +1,5 @@
 const lastUpdate = function() {
-  const today = new Date().toJSON().slice(0, 19).split('T').join(' ');
+  const today = new Date().toLocaleString();
   return today;
 };
 
