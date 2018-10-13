@@ -1,24 +1,16 @@
-import {
-  currenciesArray,
-} from './database.js';
-import {
-  autocomplete,
-} from './autocomplete.js';
+import { currenciesArray } from './database.js';
 import * as $ from 'jquery';
-import {
-  convertEvent,
-} from './convert-btn-event.js';
-import {
-  swapEvent,
-} from './swap-btn-event.js';
-import {
-  chartEvent,
-} from './chart-btn-event.js';
+import { convertEvent } from './convert-btn-event.js';
+import { swapEvent } from './swap-btn-event.js';
+import { chartEvent } from './chart-btn-event.js';
 
+const list = document.getElementById('currencies');
 
-autocomplete(document.getElementById('from-input'), currenciesArray);
-autocomplete(document.getElementById('to-input'), currenciesArray);
-
+currenciesArray.forEach((element) => {
+  const option = document.createElement('option');
+  option.value = element;
+  list.appendChild(option);
+});
 
 $('#convert-btn').click(function() {
   convertEvent();

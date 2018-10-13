@@ -34,19 +34,19 @@
                 </div>
                 <div class='input-blocks'>
                     <p>From</p>
-                    <form autocomplete='off'  action='/action_page.php'>
-                        <div class='autocomplete'>
-                            <input id='from-input' value="BGN" maxlength="3" style="text-transform:uppercase" class='form-control' type='text' name='from-currency'>
-                        </div>
-                    </form>
+                    <div id='create-input'>
+
+                        <datalist id='currencies'></datalist>
+                        <input list='currencies' id='from-input' id="autocomplete" type="text" class='form-control' value='USD'>
+                    
+                    </div>
                 </div>
                 <div class='input-blocks'>
                     <p>To</p>
-                    <form autocomplete='off' action='/action_page.php'>
-                        <div class='autocomplete'>
-                            <input id='to-input' value="USD" maxlength="3" stlye="text-transform:uppercase" class='form-control' type='text' name='to-currency'>
-                        </div>
-                    </form>
+                    <div>
+                        <datalist id="currencies"></datalist>
+                        <input list='currencies' id='to-input' type="text" class='form-control' value='EUR'>
+                    </div>
                 </div>
                 <div class='row'>
                     <div class='col-md-4'></div>
