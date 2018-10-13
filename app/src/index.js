@@ -29,6 +29,5 @@ $('#swap-btn').click(function() {
 });
 
 $('#chart-btn').click(function() {
-  console.log('PederasT!');
   chartEvent();
 });

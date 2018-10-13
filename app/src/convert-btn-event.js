@@ -29,16 +29,7 @@ const convertEvent = () => {
     const exchangeRate = await getExchangeRate();
     const result = await convertionResult(exchangeRate);
 
-    // currency symbol if any
     const currentSymbol = listCurrencies[to].currencySymbol || to;
-
-    // tag append is not working here. Fixed as result paragraph text change
-    // but we should find a better solution
-
-    // let tag = $('<p></p>')
-    // .text(`${result} ! ! ! ${currentSymbol} !`)
-    // .css('color', 'white');
-    // $('#result').append(tag)
     $('#res-par').text(`${result} ${currentSymbol}`).css('color', 'white');
   };
   aSync();
