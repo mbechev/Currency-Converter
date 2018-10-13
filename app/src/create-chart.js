@@ -8,7 +8,7 @@ const getParameters = (rates, dates, from, to) => {
     data: {
       labels: dates,
       datasets: [{
-        label: `(1)${from} to (1)${to}`,
+        label: `${from}/${to}`,
         data: rates,
         backgroundColor: [
           'rgb(76, 189, 255)',
