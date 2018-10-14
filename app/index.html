@@ -10,7 +10,7 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
@@ -39,15 +39,16 @@
             <div class='form-group'>
                 <div class='input-blocks'>
                     <p>Amount</p>
-                    <input id='amount' class='form-control' type='number' name='amount' value='1' min='1' max="999999999999999" oninput='validity.valid||(value="")'>
+                    <input id='amount' class='form-control' type='number' name='amount' value='1' min='1' max="999999999999999"
+                        oninput='validity.valid||(value="")'>
                 </div>
                 <div class='input-blocks'>
                     <p>From</p>
                     <div id='create-input'>
 
                         <datalist id='currencies'></datalist>
-                        <input list='currencies' id='from-input' id="autocomplete" type="text" class='form-control' maxlength="3" style="text-transform:uppercase"
-                            value='USD'>
+                        <input list='currencies' id='from-input' id="autocomplete" type="text" class='form-control'
+                            maxlength="3" style="text-transform:uppercase" value='USD'>
 
                     </div>
                 </div>
@@ -55,7 +56,8 @@
                     <p>To</p>
                     <div>
                         <datalist id="currencies"></datalist>
-                        <input list='currencies' id='to-input' type="text" class='form-control' maxlength="3" style="text-transform:uppercase" value='EUR'>
+                        <input list='currencies' id='to-input' type="text" class='form-control' maxlength="3" style="text-transform:uppercase"
+                            value='EUR'>
                     </div>
                 </div>
                 <div class='row'>
@@ -71,7 +73,6 @@
                             <div class='btn-group mr-2' role='group' aria-label='Second group'>
                                 <button type='submit' class='btn btn-warning btn-lg' id='swap-btn'>Swap</button>
                             </div>
-
                         </div>
                     </div>
                     <div class='col-md-4'></div>
@@ -89,14 +90,13 @@
                 <div>
                     <canvas id='lineChart'></canvas>
                 </div>
-
-
             </div>
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-            <script src='./dist/main.js'></script>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src='./dist/main.js'></script>
 </body>
 
 </html>

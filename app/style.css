@@ -1,6 +1,6 @@
 .body {
     background-image: url("./images/background-wallpaper.jpg");
-    background-repeat: x ;
+    background-repeat: x;
     background-position: center;
 }
 
@@ -12,7 +12,7 @@
     background-color: inherit;
     color: rgb(255, 255, 255);
     text-align: center;
-    border: 2px solid rgb(139, 228, 211);
+    border: 2px solid rgb(36, 128, 111);
 }
 
 .page-header {
@@ -37,6 +37,14 @@
     color: white;
     background-color: inherit;
     background-clip: padding-box;
+    
+}
+.form-group :focus{
+    background-color: inherit;
+    color:white;
+}
+.currencies:focus{
+    background:inherit;
 }
 
 .btn-toolbar {
@@ -45,10 +53,6 @@
 
 .input-blocks {
     display: inline-block;
-}
-
-#swap-btn {
-    color: black;
 }
 
 #res-par {
@@ -68,6 +72,49 @@
     margin-top: 11px;
     margin-bottom: 9px;
     -webkit-animation: rotation 5s infinite linear;
+}
+
+.btn-toolbar .btn {
+    background: inherit;
+    color: white;
+}
+
+#swap-btn {
+    border-color: rgba(192, 192, 37, 0.6);
+    background-color: rgba(153, 153, 14, 0.1);
+}
+
+#convert-btn {
+    border: 1px solid rgba(79, 241, 120, 0.5);
+    background-color: rgba(65, 160, 89, 0.1);
+}
+#chart-btn {
+    background-color: rgba(25, 81, 236, 0.2);
+}
+
+#convert-btn:hover {
+    background-color: rgba(65, 160, 89, 0.5);
+}
+
+#swap-btn:hover {
+    background-color: rgba(153, 153, 14, 0.5);
+}
+
+#chart-btn:hover {
+    background-color: rgba(25, 81, 236, 0.5);
+}
+
+/* When is active */
+#convert-btn:focus{
+    background-color: rgba(65, 160, 89, 0.5);
+}
+
+#swap-btn:focus {
+    background-color: rgba(153, 153, 14, .5);
+}
+
+#chart-btn:focus {
+    background-color: rgba(25, 81, 236, 0.5);
 }
 
 
