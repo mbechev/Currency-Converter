@@ -16,7 +16,7 @@ const convertEvent = () => {
 
     const currentSymbol = listCurrencies[to].currencySymbol || to;
     $('#res-par').text(`${result} ${currentSymbol}`).css('color', 'lawngreen');
-    $('#res-from').text(`1 ${from} =`)
+    $('#res-from').text(`${$('#amount').val()} ${from} =`)
 
     $('#todayDate').text(`${lastUpdate()}`);
   };

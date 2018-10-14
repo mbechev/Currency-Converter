@@ -136,9 +136,6 @@
     border: 1px solid rgba(79, 241, 120, 0.5);
     background-color: rgba(65, 160, 89, 0.1);
 }
-#chart-btn {
-    background-color: rgba(25, 81, 236, 0.2);
-}
 
 #convert-btn:hover {
     background-color: rgba(65, 160, 89, 0.5);
@@ -148,9 +145,7 @@
     background-color: rgba(153, 153, 14, 0.5);
 }
 
-#chart-btn:hover {
-    background-color: rgba(25, 81, 236, 0.5);
-}
+
 
 /* When is active */
 #convert-btn:focus{
@@ -160,12 +155,11 @@
 #swap-btn:focus {
     background-color: rgba(153, 153, 14, .5);
 }
+.fade {
+    -webkit-transition: 0.5s step-end;
+  }
 
-#chart-btn:focus {
-    background-color: rgba(25, 81, 236, 0.5);
-}
-
-
+ 
 
 @-webkit-keyframes rotation {
 
