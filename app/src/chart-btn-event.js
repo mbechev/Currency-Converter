@@ -20,6 +20,9 @@ const chartEvent = () => {
     // const getHistoricalObj1 = await getHistoricalData(30, from, to);
     const dates = createDatesArray(getHistoricalObj);
     const rates = createRatesArray(getHistoricalObj);
+    rates.pop();
+    console.log(rates);
+    
     getParameters(rates, dates, from, to);
   };
   aSyncFunction();
