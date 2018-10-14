@@ -8,13 +8,6 @@
     color: black;
 }
 
-.jumbotron {
-    background-color: inherit;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    border: 2px solid rgb(36, 128, 111);
-}
-
 .page-header {
     margin-top: 30px;
     display: flex;
@@ -31,6 +24,54 @@
 
 }
 
+.nav-tabs>li>.nav-link{
+    color: white;
+    margin-right: 2px;
+    line-height: 1.5;
+    border: 1px solid rgb(36, 128, 111);
+    border-bottom-color: transparent
+}
+.nav-tabs>li>.nav-link:hover {
+    border: 1px solid #8be4d3;
+    border-bottom: 0px
+}
+
+
+.nav-tabs>li>.nav-link.active {
+    color: white;
+    background:inherit;
+    border: 1px solid rgb(36, 128, 111);
+    border-bottom-color: transparent !important
+}
+.nav-tabs{
+    border-bottom: 1px solid rgb(36, 128, 111);
+}
+.tab-content{
+    border: 2px solid rgb(36, 128, 111);
+    border-top: 0px;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+.jumbotron {
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f8f9fa;
+    font-weight: bold;
+    background-color: inherit;
+    background-clip: padding-box;
+    border: 2px solid #8be4d3;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+};
 .form-group p {
     margin-bottom: 3px;
     font-size: 17px;
@@ -59,6 +100,13 @@
     font-size: 30px;
     margin-top: 20px;
 }
+
+#res-from {
+    text-align: center;
+    font-size: 15px;
+    margin-top:20px;
+}
+
 
 #todayDate {
     font-size: 15px;
