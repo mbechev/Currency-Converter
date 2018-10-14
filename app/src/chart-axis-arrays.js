@@ -1,7 +1,7 @@
 const createDatesArray = (data) => {
   const datesArr = data.split('\n').map((x) => x.split(' ')).map((y) => y[0]);
   datesArr.pop();
-  console.log(datesArr);
+  // console.log(datesArr);
   return datesArr;
 };
 
