@@ -4,10 +4,6 @@
     background-position: center;
 }
 
-.input-container {
-    color: black;
-}
-
 .page-header {
     margin-top: 30px;
     display: flex;
@@ -21,71 +17,75 @@
 .page-header h2 {
     color: white;
     margin-top: 3px;
-
 }
 
-.nav-tabs>li>.nav-link{
+.nav-tabs>li>.nav-link {
     color: white;
     margin-right: 2px;
     line-height: 1.5;
     border: 1px solid rgb(36, 128, 111);
-    border-bottom-color: transparent
-}
-.nav-tabs>li>.nav-link:hover {
-    border: 1px solid #8be4d3;
-    border-bottom: 0px
 }
 
+.nav-tabs>li>.nav-link:hover {
+    border: 1px solid #8be4d3;
+}
 
 .nav-tabs>li>.nav-link.active {
     color: white;
-    background:inherit;
+    background: inherit;
     border: 1px solid rgb(36, 128, 111);
-    border-bottom-color: transparent !important
+    border-bottom-color: rgb(2, 47, 50);
 }
-.nav-tabs{
+
+.nav-tabs>li>#chart-tab.active {
+    border-bottom-color: rgb(2, 70, 69);
+}
+
+.nav-tabs {
     border-bottom: 1px solid rgb(36, 128, 111);
 }
-.tab-content{
-    border: 2px solid rgb(36, 128, 111);
-    border-top: 0px;
-    border-bottom-left-radius: .25rem;
-    border-bottom-right-radius: .25rem;
+
+.tab-content {
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 1px solid rgb(36, 128, 111);
+    border-radius: .1rem;
+    border-top: none;
 }
+
 .jumbotron {
     background-color: inherit;
     color: rgb(255, 255, 255);
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
     color: #f8f9fa;
     font-weight: bold;
     background-color: inherit;
     background-clip: padding-box;
-    border: 2px solid #8be4d3;
+    border: 2px solid rgb(165, 250, 233);
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-};
+}
+
 .form-group p {
     margin-bottom: 3px;
     font-size: 17px;
     color: white;
     background-color: inherit;
     background-clip: padding-box;
-    
+
 }
-.form-group :focus{
+
+.form-group :focus {
     background-color: inherit;
-    color:white;
+    color: white;
 }
-.currencies:focus{
-    background:inherit;
+
+.currencies:focus {
+    background: inherit;
 }
 
 .btn-toolbar {
@@ -104,22 +104,11 @@
 #res-from {
     text-align: center;
     font-size: 15px;
-    margin-top:20px;
+    margin-top: 20px;
 }
-
 
 #todayDate {
     font-size: 15px;
-}
-
-
-#loading {
-    width: 120px;
-    height: 120px;
-    margin-right: 20px;
-    margin-top: 11px;
-    margin-bottom: 9px;
-    -webkit-animation: rotation 5s infinite linear;
 }
 
 .btn-toolbar .btn {
@@ -137,6 +126,7 @@
     background-color: rgba(65, 160, 89, 0.1);
 }
 
+/* When is hover */
 #convert-btn:hover {
     background-color: rgba(65, 160, 89, 0.5);
 }
@@ -145,32 +135,45 @@
     background-color: rgba(153, 153, 14, 0.5);
 }
 
-
+/* #chart-btn:hover {
+    background-color: rgba(25, 81, 236, 0.3);
+}
+.nav-tabs>li>.nav-link:hover {
+    background-color: rgba(25, 81, 236, 0.3);
+} */
 
 /* When is active */
-#convert-btn:focus{
+#convert-btn:focus {
     background-color: rgba(65, 160, 89, 0.5);
 }
 
 #swap-btn:focus {
     background-color: rgba(153, 153, 14, .5);
 }
-.fade {
-    -webkit-transition: 0.5s step-end;
-  }
 
- 
+/* #chart-btn:focus  {
+    background-color: rgba(25, 81, 236, 0.5);
+}
+.nav-tabs>li>.nav-link:focus {
+    background-color: rgba(25, 81, 236, 0.5);
+} */
 
+/* Spin logo */
+#loading {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    margin-bottom: 9px;
+    -webkit-animation: rotation 4s infinite linear;
+}
 @-webkit-keyframes rotation {
-
     0%,
     100% {
-        -webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(540deg);
     }
-
-    20%,
+    
+    30%,
     100% {
         -webkit-transform: rotate(0deg);
     }
-
 }
