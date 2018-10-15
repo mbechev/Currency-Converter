@@ -732,7 +732,6 @@ const listCurrencies = {
 const currenciesArray = Object.values(listCurrencies)
     .map((element) => element.id);
 
-
 export {
   listCurrencies,
   currenciesArray,

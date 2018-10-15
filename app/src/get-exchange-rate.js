@@ -1,7 +1,5 @@
 import * as $ from 'jquery';
-import {
-  currenciesArray,
-} from './database.js';
+import { currenciesArray } from './database.js';
 
 const getExchangeRate = (url, from, to) => {
   return new Promise((resolve, reject) => {

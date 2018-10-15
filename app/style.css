@@ -14,6 +14,10 @@
     margin-top: 10px;
 }
 
+#lineChart{
+    padding: 8px;
+}
+
 .page-header h2 {
     color: white;
     margin-top: 3px;
@@ -135,13 +139,6 @@
     background-color: rgba(153, 153, 14, 0.5);
 }
 
-/* #chart-btn:hover {
-    background-color: rgba(25, 81, 236, 0.3);
-}
-.nav-tabs>li>.nav-link:hover {
-    background-color: rgba(25, 81, 236, 0.3);
-} */
-
 /* When is active */
 #convert-btn:focus {
     background-color: rgba(65, 160, 89, 0.5);
@@ -151,21 +148,20 @@
     background-color: rgba(153, 153, 14, .5);
 }
 
-/* #chart-btn:focus  {
-    background-color: rgba(25, 81, 236, 0.5);
-}
-.nav-tabs>li>.nav-link:focus {
-    background-color: rgba(25, 81, 236, 0.5);
-} */
-
 /* Spin logo */
 #loading {
     width: 120px;
     height: 120px;
     margin-right: 20px;
-    margin-bottom: 9px;
+    margin-bottom: 30px;
     -webkit-animation: rotation 4s infinite linear;
 }
+
+.center-btn{
+    margin: 0 auto;
+    padding-right: 14px;
+}
+
 @-webkit-keyframes rotation {
     0%,
     100% {

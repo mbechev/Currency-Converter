@@ -1,14 +1,7 @@
 import * as $ from 'jquery';
-import {
-  getParameters,
-} from './create-chart.js';
-import {
-  getHistoricalData,
-} from './chart-api-call';
-import {
-  createDatesArray,
-  createRatesArray,
-} from './chart-axis-arrays';
+import { getParameters } from './create-chart.js';
+import { getHistoricalData } from './chart-api-call';
+import { createDatesArray, createRatesArray } from './chart-axis-arrays';
 
 const chartEvent = () => {
   const from = ($('#from-input').val()); // USD

@@ -5,7 +5,8 @@ const convertionResult = (rate) => {
     const amount = $('#amount').val();
     if (!amount) {
       const errorMessage = 'Invalid amount, please check you input field.';
-      const printMEssage = $('#res-par').text(`${errorMessage}`).css('color', 'red');
+      const printMEssage = $('#res-par').text(`${errorMessage}`)
+          .css('color', 'red');
       reject(printMEssage);
     }
     const calculation = (amount * rate).toFixed(4);
