@@ -11,7 +11,7 @@ const chartEvent = () => {
     const historicalData = await getHistoricalData(days, from, to);
     const dates = createAxisArray(historicalData, 'date');
     const rates = createAxisArray(historicalData, 'rate');
-    console.log(dates);
+    // console.log(dates);
     appendChart(rates, dates, from, to, days);
   };
   aSyncFunction(7);
