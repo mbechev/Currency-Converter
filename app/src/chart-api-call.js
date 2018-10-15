@@ -12,11 +12,13 @@ const getHistoricalData = (days, from, to) => {
   const url = `http://currencies.apps.grandtrunk.net/getrange/${fromDate}/${toDate}/${from.toLowerCase()}/${to.toLowerCase()}`;
 
   return new Promise((resolve, reject) => {
-    if (!currenciesArray.includes(from) || !currenciesArray.includes(to)) {
+    if (currenciesArray.includes(from) && currenciesArray.includes(to)) {
+      $('#err-msg').text('');
+    } else {
       const errorMessage = !currenciesArray.includes(from) ?
         'Invalid currency, in "from" input filed.' :
         'Invalid currency, in "to" input field.';
-      const printMEssage = $('#res-par')
+      const printMEssage = $('#err-msg')
           .text(`${errorMessage}`).css('color', 'red');
       reject(printMEssage);
     }
