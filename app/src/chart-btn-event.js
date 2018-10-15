@@ -1,20 +1,21 @@
 import * as $ from 'jquery';
-import { getParameters } from './create-chart.js';
+import { appendChart } from './chart-append';
 import { getHistoricalData } from './chart-api-call';
-import { createDatesArray, createRatesArray } from './chart-axis-arrays';
+import { createAxisArray } from './chart-axis-arrays';
 
 const chartEvent = () => {
   const from = ($('#from-input').val()); // USD
   const to = ($('#to-input').val()); // BGN
 
-  const aSyncFunction = async function() {
-    const getHistoricalObj = await getHistoricalData(31, from, to);
-    const dates = createDatesArray(getHistoricalObj);
-    const rates = createRatesArray(getHistoricalObj);
-    rates.pop();
-    getParameters(rates, dates, from, to);
+  const aSyncFunction = async function(days) {
+    const historicalData = await getHistoricalData(days, from, to);
+    const dates = createAxisArray(historicalData, 'date');
+    const rates = createAxisArray(historicalData, 'rate');
+    console.log(dates);
+    appendChart(rates, dates, from, to, days);
   };
-  aSyncFunction();
+  aSyncFunction(7);
+  aSyncFunction(30);
 };
 
 export {

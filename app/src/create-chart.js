@@ -1,17 +1,11 @@
-import Chart from 'chart.js';
-let myLineChart;
-const getParameters = (rates, dates, from, to) => {
-  if (myLineChart) {
-    myLineChart.destroy();
-  }
-  const ctxL = document.getElementById('lineChart').getContext('2d');
-  myLineChart = new Chart(ctxL, {
+const getParameters = (rates, dates, from, to, days) => {
+  const chartOptions = {
     backgroundColor: 'rgba(173, 255, 239, 0.1)',
     type: 'line',
     data: {
       labels: dates,
       datasets: [{
-        label: `${from}/${to}`,
+        label: `${from}/${to} - ${days} days`,
         data: rates,
         backgroundColor: [
           'rgba(255, 255, 255, 0.2)',
@@ -41,7 +35,8 @@ const getParameters = (rates, dates, from, to) => {
         }],
       },
     },
-  });
+  };
+  return chartOptions;
 };
 
 export {

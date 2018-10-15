@@ -1,15 +1,17 @@
-const createDatesArray = (data) => {
-  const datesArr = data.split('\n').map((x) => x.split(' ')).map((y) => y[0]);
-  datesArr.pop();
-  return datesArr;
-};
-
-const createRatesArray = (data) => {
-  const ratesArr = data.split('\n').map((x) => x.split(' ')).map((y) => y[1]);
-  return ratesArr;
+const createAxisArray = (data, command) => {
+  let arrayIndex = -1;
+  if (command === 'date') {
+    arrayIndex = 0;
+  } else if (command === 'rate') {
+    arrayIndex = 1;
+  }
+  const axisArray = data.split('\n')
+      .map((x) => x.split(' '))
+      .map((y) => y[arrayIndex]);
+  axisArray.pop();
+  return axisArray;
 };
 
 export {
-  createDatesArray,
-  createRatesArray,
+  createAxisArray,
 };

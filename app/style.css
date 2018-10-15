@@ -33,31 +33,28 @@
 .nav-tabs>li>.nav-link:hover {
     border: 1px solid #8be4d3;
 }
-
 .nav-tabs>li>.nav-link.active {
     color: white;
     background: inherit;
     border: 1px solid rgb(36, 128, 111);
     border-bottom-color: rgb(2, 47, 50);
 }
-
 .nav-tabs>li>#chart-tab.active {
     border-bottom-color: rgb(2, 70, 69);
 }
-
 .nav-tabs {
     border-bottom: 1px solid rgb(36, 128, 111);
-}
 
+}
 .tab-content {
     background-color: inherit;
     color: rgb(255, 255, 255);
     text-align: center;
     border: 1px solid rgb(36, 128, 111);
-    border-radius: .1rem;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
     border-top: none;
 }
-
 .jumbotron {
     background-color: inherit;
     color: rgb(255, 255, 255);
