@@ -14,7 +14,7 @@
     margin-top: 10px;
 }
 
-#lineChart{
+#lineChart {
     padding: 8px;
 }
 
@@ -33,19 +33,23 @@
 .nav-tabs>li>.nav-link:hover {
     border: 1px solid #8be4d3;
 }
+
 .nav-tabs>li>.nav-link.active {
     color: white;
     background: inherit;
     border: 1px solid rgb(36, 128, 111);
     border-bottom-color: rgb(2, 47, 50);
 }
+
 .nav-tabs>li>#chart-tab.active {
     border-bottom-color: rgb(2, 70, 69);
 }
+
 .nav-tabs {
     border-bottom: 1px solid rgb(36, 128, 111);
 
 }
+
 .tab-content {
     background-color: inherit;
     color: rgb(255, 255, 255);
@@ -54,7 +58,13 @@
     border-bottom-left-radius: .25rem;
     border-bottom-right-radius: .25rem;
     border-top: none;
+    
 }
+#content-pills{
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
 .jumbotron {
     background-color: inherit;
     color: rgb(255, 255, 255);
@@ -154,17 +164,51 @@
     -webkit-animation: rotation 4s infinite linear;
 }
 
-.center-btn{
+.center-btn {
     margin: 0 auto;
     padding-right: 14px;
 }
 
+#seven-days {
+    background-color: inherit;
+    border: 1px solid rgba(131, 239, 217, 0.2);
+    color: white;
+}
+
+#seven-days:focus {
+    border: 1px solid rgb(131, 239, 217);
+    background-color: rgba(131, 239, 217, 0.2)
+}
+
+#thirty-days {
+    color: white;
+    background-color: inherit;
+    border: 1px solid rgba(131, 239, 217, 0.2);
+}
+
+#thirty-days:focus {
+    border: 1px solid rgb(131, 239, 217);
+    background-color: rgba(131, 239, 217, 0.2)
+}
+#thirty-days:hover {
+    border: 1px solid rgb(131, 239, 217);
+}
+#seven-days:hover {
+    border: 1px solid rgb(131, 239, 217);
+}
+
+#pills-tab  {
+    padding-top: 10px;
+    justify-content: center;
+}
+
 @-webkit-keyframes rotation {
+
     0%,
     100% {
         -webkit-transform: rotate(540deg);
     }
-    
+
     30%,
     100% {
         -webkit-transform: rotate(0deg);
